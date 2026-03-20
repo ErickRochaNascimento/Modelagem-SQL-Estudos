@@ -45,9 +45,7 @@ O projeto inclui scripts SQL para:
 
 ---
 
-## 📬 Contato
+## 🧑‍💻 Autor
 
-Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/erick-rocha-nascimento/) para trocarmos experiências sobre dados e tecnologia!
-
----
-*Projeto desenvolvido para fins de estudo e portfólio.*
+**Erick Rocha Nascimento**  
+🔗 [LinkedIn](https://www.linkedin.com/in/erickrochanascimento) | [GitHub](https://github.com/ErickRochaNascimento)
