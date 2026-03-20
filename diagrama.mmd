@@ -1,0 +1,46 @@
+erDiagram
+    CLIENTES ||--o{ CONTAS : possui
+    CLIENTES ||--o{ EMPRESTIMOS : solicita
+    CONTAS ||--o{ TRANSACOES : registra
+    CONTAS ||--o{ CARTOES : emite
+
+    CLIENTES {
+        string cpf_cliente PK
+        string nome
+        date dataNascimento
+        string telefone
+        string logradouro
+        string cidade
+        string estado
+    }
+
+    CONTAS {
+        int numeroConta PK
+        enum tipoConta
+        decimal saldo
+        string cliente_CPF_cliente FK
+    }
+
+    TRANSACOES {
+        int id_transacao PK
+        enum tipo
+        decimal valor
+        datetime dataTransacao
+        int numero_conta FK
+    }
+
+    CARTOES {
+        string numero PK
+        enum status
+        decimal limite
+        int numero_conta FK
+    }
+
+    EMPRESTIMOS {
+        int id_emprestimo PK
+        decimal valorEmprestimo
+        decimal valorParcela
+        int quantidadeParcelas
+        int parcelasPagas
+        string cliente_CPF_cliente FK
+    }
